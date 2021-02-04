@@ -23,7 +23,7 @@ module.exports = withPlugins(
 								headers: createSecureHeaders({
 									contentSecurityPolicy: {
 										directives: {
-											defaultSrc: "'self'",
+											defaultSrc: ["'self'", "unsafe-inline"],
 											imgSrc: ["'self'", "*"],
 											styleSrc: ["'self'", "unsafe-inline"],
 											scriptSrc: [
